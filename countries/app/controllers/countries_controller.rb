@@ -5,5 +5,10 @@ class CountriesController < ApplicationController
     render :json => countries.to_json()
   end
 
+  def show
+    country = Country.find(params[:id])
+    render json: country
+  end
+
 
 end

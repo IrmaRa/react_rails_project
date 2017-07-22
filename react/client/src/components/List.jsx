@@ -5,10 +5,13 @@ import Country from './Country'
 class List extends React.Component {
   constructor(props) {
     super(props)
+
+    this.laodDestinations = this.laodDestinations.bind(this);
     this.state = {
       selectedCountry: '',
       countries: []
     }
+
   }
 
   componentDidMount() {
@@ -28,6 +31,10 @@ class List extends React.Component {
     request.send()
   }
 
+  laodDestinations() {
+    
+  }
+
   render() {
     const countries = this.state.countries.map((country, index) => {
       return (
@@ -36,12 +43,14 @@ class List extends React.Component {
         description={country.description}
         image={country.image}
         key={index}
-        countries={this.state.countries} />
+        countries={this.state.countries} 
+        />
       )
     })
     return(
       <div className='country-list'>
         {countries}
+      <Destination laodDestinations={this.laodDestinations} />
       </div>
     )
   }
