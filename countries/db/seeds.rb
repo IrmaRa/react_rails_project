@@ -180,3 +180,52 @@ Destination.create({
   comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
   country: vietnam
 })
+
+Destination.create({
+  name: 'Tioman', 
+  image: 'tioman.jpg',
+  description: 'Tioman Island lies off the east coast of Peninsular Malaysia, in the South China Sea. It\'s a nature reserve, ringed by beaches. The area is known for its dive sites, which have corals, sea fans and sea sponges, as well as shipwrecks. The island is covered in tropical rainforests, home to butterflies, lizards and monkeys. On the east coast, the Juara Turtle Project is a hatchery that protects and studies sea turtles.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: malaysia
+})
+
+Destination.create({
+  name: 'Langkawi', 
+  image: 'langkawi.jpg',
+  description: 'Langkawi, officially known as Langkawi the Jewel of Kedah, is an archipelago of 104 islands in the Andaman Sea, some 30km off the mainland coast of northwestern Malaysia.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: malaysia
+})
+
+Destination.create({
+  name: 'Kuala Lumpur', 
+  image: 'kuala_lumpur.jpg',
+  description: 'Kuala Lumpur is the capital of Malaysia. Its modern skyline is dominated by the 451m-tall Petronas Twin Towers, a pair of glass-and-steel-clad skyscrapers with Islamic motifs. The towers also offer a public skybridge and observation deck. The city is also home to British colonial-era landmarks such as the Kuala Lumpur Railway Station and the Sultan Abdul Samad Building.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: malaysia
+})
+
+Destination.create({
+  name: 'Penang', 
+  image: 'penang.jpg',
+  description: 'Penang is a Malaysian island off the Malay Peninsula in the Strait of Malacca. In George Town, the capital of Penang state, foreign influences are evident in landmarks like colonial Fort Cornwallis, Chinese clan temple Khoo Kongsi and Indian-style Kapitan Keling Mosque. Other notable religious sites include the Chinese Goddess of Mercy Temple, the Buddhist Kek Lok Si Temple and Hindu Sri Mahamariamman Temple.
+',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: malaysia
+})
+
+Destination.create({
+  name: 'Sandakan', 
+  image: 'sandakan.jpg',
+  description: 'Sandakan is a city in the Malaysian state of Sabah, on the northeast coast of Borneo. The hilltop Puu Jih Shih Temple offers panoramic views of the city. Agnes Keith House is a wooden bungalow that re-creates the city\'s colonial-era life. The city is also a base for visiting the Sepilok Orangutan Rehabilitation Centre and the limestone Gomantong Caves, home to swiftlets, bats and kingfishers.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: malaysia
+})
+
+Destination.create({
+  name: 'Petaling Jaya', 
+  image: 'petaling_jaya.jpg',
+  description: 'Petaling Jaya is a major Malaysian city originally developed as a satellite township for Kuala Lumpur. It is located in the Petaling District of Selangor with an area of approximately 97.2 square kilometres.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: malaysia
+})
