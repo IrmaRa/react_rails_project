@@ -132,3 +132,51 @@ Destination.create({
   comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
   country: thailand
 })
+
+Destination.create({
+  name: 'Hoi An', 
+  image: 'hoi_an.jpg',
+  description: 'Hội An is a city on Vietnam’s central coast known for its well-preserved Ancient Town, cut through with canals. The former port city’s melting-pot history is reflected in its architecture, a mix of eras and styles from wooden Chinese shophouses and temples to colorful French colonial buildings, ornate Vietnamese tube houses and the iconic Japanese Covered Bridge with its pagoda.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: vietnam
+})
+
+Destination.create({
+  name: 'Hanoi', 
+  image: 'hanoi.jpg',
+  description: 'Hanoi, the capital of Vietnam, is known for its centuries-old architecture and a rich culture with Southeast Asian, Chinese and French influences. At its heart is the chaotic Old Quarter, where the narrow streets are roughly arranged by trade. There are many little temples, including Bach Ma, honoring a legendary horse, plus Đồng Xuân Market, selling household goods and street food.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: vietnam
+})
+
+Destination.create({
+  name: 'Ha Chi Minh', 
+  image: 'ho_chi_minh.jpeg',
+  description: 'Ho Chi Minh City (commonly known as Saigon) is a city in southern Vietnam famous for the pivotal role it played in the Vietnam War. It\'s also known for its French colonial landmarks, including Notre-Dame Cathedral, made entirely of materials imported from France, and the 19th-century Central Post Office. Food stalls line the city’s streets, especially around bustling Bến Thành Market.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: vietnam
+})
+
+Destination.create({
+  name: 'Dong Hoi', 
+  image: 'dong_hoi.jpg',
+  description: 'Đồng Hới is the capital city of Quảng Bình Province in the north central coast of Vietnam. The city\'s area is 155.71 km². Population as per the 2013 census was 160,000. It is served by National Highway 1A, the Đồng Hới Railway Station, and airport.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: vietnam
+})
+
+Destination.create({
+  name: 'Hue', 
+  image: 'hue.jpg',
+  description: 'Huế is a city in central Vietnam that was the seat of Nguyen Dynasty emperors and the national capital from 1802 to 1945. A major attraction is its vast, 19th-century Citadel, surrounded by a moat and thick stone walls. It encompasses the Imperial City, with palaces and shrines; the Forbidden Purple City, once the emperor’s home; and a replica of the Royal Theater.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: vietnam
+})
+
+Destination.create({
+  name: 'Da Nang', 
+  image: 'da_nang.jpg',
+  description: 'Da Nang is a coastal city in central Vietnam known for its sandy beaches and history as a French colonial port. It\'s a popular base for visiting the inland Bà Nà hills to the west of the city. Here the hillside Hải Vân Pass has views of Da Nang Bay and the Marble Mountains. These 5 limestone outcrops are topped with pagodas and hide caves containing Buddhist shrines.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: vietnam
+})
