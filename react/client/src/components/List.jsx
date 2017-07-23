@@ -1,19 +1,14 @@
 import React from 'react'
-import { Link, Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Country from './Country'
-import Destination from './Destination'
+import DestinationList from './DestinationList'
 
 class List extends React.Component {
   constructor() {
     super()
 
-    this.getDestinations = this.getDestinations.bind(this);
-    this.handleClick = this.handleClick.bind(this);
-
     this.state = {
-      countries: [],
-      destinations: [],
-      selectedCountry: ''
+      countries: []
     }
   }
 
@@ -24,40 +19,38 @@ class List extends React.Component {
     request.onload = () => {
      if(request.status === 200){
       var data = JSON.parse(request.responseText)
-      this.setState( { countries: data } )
+      this.setState( { countries: data} )
+      }
     }
+    request.send()
   }
-  request.send()
-}
 
-handleClick(event) {
- this.setState({
-   selectedCountry: event.target.value
- })
-}
+  render() {
 
-render() {
-  const countries = this.state.countries.map((country, index) => {
-    return (
-      <div>
-      <Country 
-      name={country.name}
-      image={country.image}
-      description={country.description}
-      handleClick={this.handleClick}
-      key={index}
-      countries={this.state.countries} 
-      />
-      <button value={country} onClick={this.handleClick}>Explore</button>
+    const countries = this.state.countries.map((country, index) => {
+      return (
+        <div>
+        <Country 
+        name={country.name}
+        image={country.image}
+        description={country.description}
+        key={index}
+        countries={this.state.countries} 
+        />
+        <Link to='/destinations'>
+        <button value={country.id}>Explore</button>
+        </Link>
+        </div>
+        )
+    })
+
+    return(
+      <div className='country-list'>
+      {countries}
       </div>
       )
-  })
-  return(
-    <div className='country-list'>
-    {countries}
-    </div>
-    )
-}
+
+  }
 }
 
 export default List

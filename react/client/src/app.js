@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Route, IndexRoute } from 'react-router-dom';
+import { render } from 'react-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
-import List from './components/List'
-import Destination from './components/Destination'
+import List from './components/List';
+import DestinationList from './components/DestinationList';
+
 
 
 class App extends React.Component{
@@ -13,7 +15,7 @@ class App extends React.Component{
       <HashRouter>
         <div className='container'>
           <Route exact path="/" component={List} />
-          <Route path="/destinations" component={Destination} />
+          <Route path="/destinations" component={DestinationList} />
         </div>
       </HashRouter>
     )

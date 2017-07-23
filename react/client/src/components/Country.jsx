@@ -12,5 +12,4 @@ class Country extends React.Component {
   }
 }
 
-
 export default Country

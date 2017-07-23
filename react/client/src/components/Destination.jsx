@@ -13,5 +13,4 @@ class Destination extends React.Component {
   }
 }
 
-
 export default Destination
