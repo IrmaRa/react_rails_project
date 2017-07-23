@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Destination from './Destination'
+import CommentBox from '../commentComponents/CommentBox'
 
 class DestinationList extends React.Component {
   constructor() {
@@ -37,6 +38,7 @@ render() {
       key={index}
       destinations={this.state.destinations} 
       />
+    <CommentBox />
       </div>
       )
   })
