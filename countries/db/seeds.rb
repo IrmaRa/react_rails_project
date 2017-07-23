@@ -277,3 +277,51 @@ Destination.create({
   comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
   country: philippines
 })
+
+Destination.create({
+  name: 'Siem Reap', 
+  image: 'siem_reap.jpg',
+  description: 'Siem Reap, a resort town in northwestern Cambodia, is the gateway to the ruins of Angkor, the seat of the Khmer kingdom from the 9th–15th centuries. Angkor’s vast complex of intricate stone buildings includes preserved Angkor Wat, the main temple, which is pictured on Cambodia’s flag. Giant, mysterious faces are carved into the Bayon Temple at Angkor Thom.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: cambodia
+})
+
+Destination.create({
+  name: 'Phnom Penh', 
+  image: 'phnom_penh.jpg',
+  description: 'Phnom Penh, Cambodia’s busy capital, sits at the junction of the Mekong and Tonlé Sap rivers. It was a hub for both the Khmer Empire and French colonialists. On its walkable riverfront, lined with parks, restaurants and bars, are the ornate Royal Palace, Silver Pagoda and the National Museum, displaying artifacts from around the country. At the city’s heart is the massive, art deco Central Market.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: cambodia
+})
+
+Destination.create({
+  name: 'Sihanoukville', 
+  image: 'sihanoukville.jpg',
+  description: 'Sihanoukville, also known as Kampong Som, is a coastal city in Cambodia and the capital city of Sihanoukville Province, located at the tip of an elevated peninsula in the country\'s south-west at the Gulf of Thailand.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: cambodia
+})
+
+Destination.create({
+  name: 'Kampot', 
+  image: 'kampot.jpg',
+  description: 'Kampot is a city on the Preaek Tuek Chhu River in southern Cambodia. It\'s known for its pepper plantations and salt fields. Many buildings date from the colonial period, including the Governor’s Mansion. The house is now the Kampot Museum, which has exhibits on the city’s history. To the west, Preah Monivong Bokor National Park has a cool climate with forests, waterfalls and wildlife including gibbons and big cats.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: cambodia
+})
+
+Destination.create({
+  name: 'Battambang', 
+  image: 'battambang.jpg',
+  description: 'Battambang is a city on the Sangkae River in northwestern Cambodia. It’s known for colonial buildings such as Sala Khaet, the former Governor’s Residence. Battambang Provincial Museum has artifacts from local Khmer temples. Nearby, Phare Ponleu Selpak is a circus and performing arts school for underprivileged children. North of the center are the ruins of Ek Phnom, an 11th-century pagoda with sandstone carvings.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: cambodia
+})
+
+Destination.create({
+  name: 'Kep', 
+  image: 'kep.jpg',
+  description: 'Kep is a coastal province in southern Cambodia, known for its seafood and tropical islands. The relaxed provincial capital of Kep, or Krong Kaeb, has wide streets with crumbling villas that recall its former glory as a French colonial resort town. Kep Beach has calm waters and a promenade with large statues, while vendors line the waterfront at the nearby crab market.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: cambodia
+})
