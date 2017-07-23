@@ -38,7 +38,7 @@ render() {
       key={index}
       destinations={this.state.destinations} 
       />
-    <CommentBox />
+      <CommentBox />
       </div>
       )
   })

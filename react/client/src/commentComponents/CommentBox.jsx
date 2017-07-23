@@ -8,8 +8,10 @@ class CommentBox extends React.Component {
     super(props)
     this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
     this.handleCommentDelete = this.handleCommentDelete.bind(this)
+    this.handleCommentSave = this.handleCommentSave.bind(this)
     this.state = { 
-      data: [] 
+      data: [],
+      savedComments: []
     }
   }
 
@@ -26,13 +28,20 @@ class CommentBox extends React.Component {
     this.setState({data: filteredData});
   }
 
+  handleCommentSave(id) {
+    var filteredData = this.state.data.filter(function(comment){
+      return comment.id == id
+    })
+    this.setState({savedComments: filteredData});
+  }
+
   render() {
      return (
       <div className="comment-box">
         <h2>Add a Comment</h2>
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
         <h2>Comments</h2>
-        <CommentList data={this.state.data} onCommentDelete={this.handleCommentDelete }/>
+        <CommentList data={this.state.data} onCommentDelete={this.handleCommentDelete} onCommentSave={this.handleCommentSave}/>
       </div>
     )
   }
