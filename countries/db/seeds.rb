@@ -229,3 +229,51 @@ Destination.create({
   comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
   country: malaysia
 })
+
+Destination.create({
+  name: 'Makati', 
+  image: 'makati.jpg',
+  description: 'Makati is a city in the Philippines’ Metro Manila region and the country’s financial hub. It’s known for the skyscrapers and shopping malls of Makati Central Business District, and for Ayala Triangle Gardens, an area dotted with trees and sculptures. Ayala Museum houses the Filipinas Heritage Library and craft collections documenting the country’s history. The Rizal Monument is a memorial to national hero José Rizal.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: philippines
+})
+
+Destination.create({
+  name: 'Quezon', 
+  image: 'quezon.jpg',
+  description: 'Quezon City is the most populous city in the Philippines. It was founded by and named after Manuel L. Quezon, the 2nd President of the Philippines to replace Manila as the national capital.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: philippines
+})
+
+Destination.create({
+  name: 'Manila', 
+  image: 'manila.jpg',
+  description: 'Manila, the capital of the Philippines, is a densely populated bayside city on the island of Luzon, which mixes Spanish colonial architecture with modern skyscrapers. Intramuros, a walled city in colonial times, is the heart of Old Manila. It’s home to the baroque 16th-century San Agustin Church as well as Fort Santiago, a storied citadel and former military prison.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: philippines
+})
+
+Destination.create({
+  name: 'Cebu', 
+  image: 'cebu.jpg',
+  description: 'Cebu is a province of the Philippines, in the country’s Central Visayas region, comprising Cebu Island and more than 150 smaller surrounding islands and islets. Its prosperous port capital, Cebu City, retains landmarks from its 16th-century Spanish colonial past, including the Basilica Minore del Santo Niño church and triangular Fort San Pedro. Tops, an observation deck on Mt. Busay, has sweeping views over the city.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: philippines
+})
+
+Destination.create({
+  name: 'Boracay', 
+  image: 'boracay.jpg',
+  description: 'Boracay is a small island in the central Philippines. It\'s known for its resorts and beaches. Along the west coast, White Beach is backed by palm trees, bars and restaurants. On the east coast, strong winds make Bulabog Beach a hub for water sports. Nearby, the observation deck on Mount Luho offers panoramic views over the island. Offshore, coral reefs and shipwrecks are home to diverse marine life.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: philippines
+})
+
+Destination.create({
+  name: 'Davao', 
+  image: 'davao.jpg',
+  description: 'Davao City, on the southern Philippine island of Mindanao, is a coastal commercial center near 2,954m-high Mount Apo, the country’s highest peak. In the city center, People’s Park is known for its colorful indigenous sculptures and lighted fountains. It\'s also home to Durian Dome, named after the pungent, spiky fruit that grows in abundance on Mindanao. The Davao River cuts through the city.',
+  comment: 'Beautiful country, Karon beach is a lovely beach and a lively resort. A little more expensive than other areas but this is because it is a more tourist area but prices are still quite good.',
+  country: philippines
+})
