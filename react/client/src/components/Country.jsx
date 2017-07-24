@@ -4,9 +4,11 @@ class Country extends React.Component {
   render() {
     return(
       <div className='country'>
-      <h3 className='country-name'>{this.props.name}</h3>
-      <img src={`images/${this.props.image}`} className='country-image' />
-      <p className='country-description'>{this.props.description}</p>
+      <ul>
+      <li className='country-name'>{this.props.name}</li>
+      <li><img src={`images/${this.props.image}`} className='country-image' /></li>
+      <li className='country-description'>{this.props.description}</li>
+      </ul>
       </div>
       )
   }

@@ -1,6 +1,43 @@
-.country {
-  background-color: lightgray
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  padding: 10px;
+}
+
+.countries-container {
+  display: flex;
+  flex-flow: wrap;  
+  justify-content: center;
+}
+
+.countries-container > *{
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.country {
+  padding: 0 0.2em 0 0.2em;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+}
+
+.country ul {
+  list-style: none;
+  border-top: 1px solid #666;
+  padding: 0.5em 0 0 0;
+}
+
+.country li {
+  margin: 0.5em 0 0 0;
+}
+
 .country-image {
   height: 300px;
   width: 500px;
@@ -10,3 +47,57 @@
   height: 300px;
   width: 500px;
 }
+
+.modal-text {
+  font-size: 20px;
+}
+
+.modal-button {
+  font-size: 12px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(images/main.jpg);
+  background-size: cover;
+}
+
+.title{
+  font-size: 60px;
+  -webkit-text-stroke: 2px black;
+  text-decoration: none;
+  padding-bottom: 30px;
+}
+
+.login-form{
+  margin: 0 auto;
+  width: 70%;
+}
+
+.login-form input{
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.sign button{
+  width: 106%;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.sign button:hover{
+  background-color: #158479;
+  cursor: pointer;
+}
+

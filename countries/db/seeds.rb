@@ -290,9 +290,3 @@ Destination.create({
   description: 'Kep is a coastal province in southern Cambodia, known for its seafood and tropical islands. The relaxed provincial capital of Kep, or Krong Kaeb, has wide streets with crumbling villas that recall its former glory as a French colonial resort town. Kep Beach has calm waters and a promenade with large statues, while vendors line the waterfront at the nearby crab market.',
   country: cambodia
 })
-
-Comment.create({
-  author: 'Irma',
-  text: 'cool place',
-  destination: bali
-  })

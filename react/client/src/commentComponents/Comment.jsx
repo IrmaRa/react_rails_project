@@ -10,6 +10,7 @@ class Comment extends React.Component {
   }
 
   handleSave() {
+    this.setState({ isModalOpen: true })
     this.props.onCommentSave({
       author: this.props.author,
       text: this.props.children,
@@ -17,9 +18,6 @@ class Comment extends React.Component {
     });
   }
 
-  openModal() {
-     this.setState({ isModalOpen: true })
-   }
 
    closeModal() {
      this.setState({ isModalOpen: false })
@@ -32,18 +30,19 @@ class Comment extends React.Component {
           { this.props.author }
         </h4>
         { this.props.children }
-        <button onClick={(event) => { this.handleSave; this.openModal();}} className="save">Save</button>
+        <button onClick={this.handleSave.bind(this)} className="save">Save</button>
+        <div className='modal-container'>
         <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-                  <h1>Modal title</h1>
-                  <p>hello</p>
-                  <p><button onClick={() => this.closeModal()}>Close</button></p>
+                  <p className='modal-text'>It has been successfully saved!</p>
+                  <p><button className='modal-button' onClick={() => this.closeModal()}>close</button></p>
                 </Modal>
+                </div>
+    
       </div>
     )
   }
   
 }
 
-// onClick={ this.handleSave.bind(this)
 
 export default Comment

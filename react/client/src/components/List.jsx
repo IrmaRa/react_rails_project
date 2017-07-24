@@ -28,6 +28,7 @@ class List extends React.Component {
 
     const countries = this.state.countries.map((country, index) => {
       return (
+        
         <div>
         <Country 
         name={country.name}
@@ -40,12 +41,13 @@ class List extends React.Component {
         <button value={country.id}>Explore</button>
         </Link>
         </div>
+   
         )
     })
     return(
-      <div className='country-list'>
+     <div className='countries-container'>
       {countries}
-      </div>
+     </div>
       )
 
   }
