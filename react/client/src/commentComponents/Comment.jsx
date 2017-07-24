@@ -8,7 +8,11 @@ class Comment extends React.Component {
   }
 
   handleSave() {
-    this.props.onCommentSave(this.props.id);
+    this.props.onCommentSave({
+      author: this.props.author,
+      text: this.props.children,
+      id: this.props.id
+    });
   }
 
   render() {

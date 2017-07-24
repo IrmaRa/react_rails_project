@@ -2,27 +2,69 @@ import React from 'react'
 
 import Destination from './Destination'
 import CommentBox from '../commentComponents/CommentBox'
+import CommentList from '../commentComponents/CommentList'
 
 class DestinationList extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
+
+    this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
+    // this.handleCommentDelete = this.handleCommentDelete.bind(this)
+    this.handleCommentSave = this.handleCommentSave.bind(this)
 
     this.state = {
-      destinations: []
+      destinations: [],
+      countryId: 0
     }
   }
 
-  componentDidMount() {
-    var url = 'http://localhost:5000/api/countries/' + event.target.value + '/destinations'
-    var request = new XMLHttpRequest()
-    request.open('GET', url)
+  handleCommentSubmit(comment) {
+    const url = 'http://localhost:5000/api/countries/' + this.state.countryId + '/destinations/' + comment.destination_id + '/comments.json'
+    const request = new XMLHttpRequest()
+    request.open("POST", url)
+    request.setRequestHeader("Content-Type", "application/json")
     request.onload = () => {
-     if(request.status === 200){
-      var data = JSON.parse(request.responseText)
-      this.setState( { destinations: data} )
+      if (request.status === 201){
+        const comment = JSON.parse(request.responseText);
+        this.fetchDestinations(this.state.countryId)
       }
+ 
     }
-  request.send()
+    comment.destination_id = comment.destinationId
+    delete comment.destinationId
+
+    request.send(JSON.stringify(comment));
+  }
+
+  handleCommentSave(comment) {
+    const oldSavedComments = JSON.parse(localStorage.getItem('savedCommentsArray')) || [];
+    oldSavedComments.push(comment); 
+    localStorage.setItem('savedCommentsArray', JSON.stringify(oldSavedComments));
+  }
+
+  // handleCommentDelete(id) {
+  //   const filteredData = this.state.data.filter(function(comment){
+  //     return comment.id != id
+  //   })
+  //   this.setState({data: filteredData});
+  // }
+
+  componentDidMount() {
+    this.setState({countryId: event.target.value})
+    this.fetchDestinations(event.target.value)
+  }
+
+  fetchDestinations(countryId) {
+      var url = 'http://localhost:5000/api/countries/' + countryId + '/destinations'
+      var request = new XMLHttpRequest()
+      request.open('GET', url)
+      request.onload = () => {
+       if(request.status === 200){
+        var data = JSON.parse(request.responseText)
+        this.setState( { destinations: data} )
+        }
+      }
+    request.send()
   }
 
 render() {
@@ -36,9 +78,17 @@ render() {
       description={destination.description}
       comment={destination.comment}
       key={index}
-      destinations={this.state.destinations} 
+      destinations={this.state.destinations}
       />
-      <CommentBox />
+      <CommentBox 
+      destinationId={destination.id}
+      onCommentSubmit={this.handleCommentSubmit}
+      />
+      <CommentList 
+      data={destination.comments}
+      onCommentSave={this.handleCommentSave} 
+      onCommentDelete={this.handleCommentDelete} 
+      />
       </div>
       )
   })

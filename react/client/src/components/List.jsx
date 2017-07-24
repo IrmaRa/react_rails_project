@@ -34,7 +34,7 @@ class List extends React.Component {
         image={country.image}
         description={country.description}
         key={index}
-        countries={this.state.countries} 
+        countries={this.state.countries}
         />
         <Link to='/destinations'>
         <button value={country.id}>Explore</button>
