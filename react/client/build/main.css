@@ -1,8 +1,12 @@
 .country {
-  background-color: grey;
+  background-color: lightgray
+}
+.country-image {
+  height: 300px;
+  width: 500px;
 }
 
-.country-image {
+.destination-image {
   height: 300px;
   width: 500px;
 }

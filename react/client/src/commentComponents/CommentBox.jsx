@@ -1,6 +1,7 @@
 import React from 'react'
-import CommentList from './CommentList.jsx'
-import CommentForm from './CommentForm.jsx'
+import CommentList from './CommentList'
+import CommentForm from './CommentForm'
+import SavedCommentList from './SavedCommentList'
   
 class CommentBox extends React.Component {
   
@@ -9,6 +10,7 @@ class CommentBox extends React.Component {
     this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
     this.handleCommentDelete = this.handleCommentDelete.bind(this)
     this.handleCommentSave = this.handleCommentSave.bind(this)
+
     this.state = { 
       data: [],
       savedComments: []
@@ -21,6 +23,30 @@ class CommentBox extends React.Component {
     this.setState({data: newComments});
   }
 
+  // handleCommentSave(id) {
+  //   var filteredData = this.state.data.filter(function(comment){
+  //     return comment.id == id
+  //   })
+  //   var newSavedComment = this.state.savedComments.concat(filteredData)
+  //   this.setState({savedComments: newSavedComment});
+  //   console.log(newSavedComment)
+  // }
+
+  handleCommentSave(id) {
+    var oldSavedComments = JSON.parse(localStorage.getItem('savedCommentsArray')) || [];
+    var filteredData = this.state.data.filter(function(comment){
+      return comment.id == id
+    })
+
+    for(var i=0; i < filteredData.length; i++) {
+    oldSavedComments.push(filteredData[i]);
+      
+    }
+
+    localStorage.setItem('savedCommentsArray', JSON.stringify(oldSavedComments));
+    console.log(oldSavedComments)
+  }
+
   handleCommentDelete(id) {
     var filteredData = this.state.data.filter(function(comment){
       return comment.id != id
@@ -28,21 +54,18 @@ class CommentBox extends React.Component {
     this.setState({data: filteredData});
   }
 
-  handleCommentSave(id) {
-    var filteredData = this.state.data.filter(function(comment){
-      return comment.id == id
-    })
-    this.setState({savedComments: filteredData});
-  }
-
   render() {
+
      return (
       <div className="comment-box">
-        <h2>Add a Comment</h2>
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
-        <h2>Comments</h2>
-        <CommentList data={this.state.data} onCommentDelete={this.handleCommentDelete} onCommentSave={this.handleCommentSave}/>
+        <CommentList 
+        data={this.state.data} 
+        onCommentSave={this.handleCommentSave} 
+        onCommentDelete={this.handleCommentDelete} 
+        />
       </div>
+  
     )
   }
     

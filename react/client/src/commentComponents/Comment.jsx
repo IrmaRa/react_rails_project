@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Comment extends React.Component {
 
@@ -17,7 +18,7 @@ class Comment extends React.Component {
           { this.props.author }
         </h4>
         { this.props.children }
-        <button onClick={ this.handleSave.bind(this) } className="save">Save Recommendation</button>
+        <button onClick={ this.handleSave.bind(this) } className="save">Save</button>
         <button onClick={ this.handleDelete.bind(this) } className="delete">Delete</button>
       </div>
     )

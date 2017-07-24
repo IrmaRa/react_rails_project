@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Country from './Country'
-import DestinationList from './DestinationList'
 
 class List extends React.Component {
   constructor() {
@@ -43,7 +42,6 @@ class List extends React.Component {
         </div>
         )
     })
-
     return(
       <div className='country-list'>
       {countries}

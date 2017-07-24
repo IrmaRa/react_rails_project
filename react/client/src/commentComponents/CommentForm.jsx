@@ -43,11 +43,11 @@ class CommentForm extends React.Component {
         />
         <input
           type="text"
-          placeholder="Share your experience"
+          placeholder="Your experience"
           value={this.state.text}
           onChange={this.handleTextChange}
         />
-        <input type="submit" value="Post" />
+        <input type="submit" value="Share" />
       </form>
     )
   }
