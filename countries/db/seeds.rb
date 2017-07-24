@@ -1,5 +1,6 @@
 Country.delete_all
 Destination.delete_all
+Comment.delete_all
 
 indonesia = Country.create({
   name: 'Indonesia',
@@ -37,7 +38,7 @@ cambodia = Country.create({
   image: 'cambodia.jpg'
 })
 
-Destination.create({
+bali = Destination.create({
   name: 'Bali', 
   image: 'bali.jpg',
   description: 'Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs. The island is home to religious sites such as cliffside Uluwatu Temple. To the south, the beachside city of Kuta has lively bars, while Seminyak, Sanur and Nusa Dua are popular resort towns. The island is also known for its yoga and meditation retreats.',
@@ -289,3 +290,9 @@ Destination.create({
   description: 'Kep is a coastal province in southern Cambodia, known for its seafood and tropical islands. The relaxed provincial capital of Kep, or Krong Kaeb, has wide streets with crumbling villas that recall its former glory as a French colonial resort town. Kep Beach has calm waters and a promenade with large statues, while vendors line the waterfront at the nearby crab market.',
   country: cambodia
 })
+
+Comment.create({
+  author: 'Irma',
+  text: 'cool place',
+  destination: bali
+  })

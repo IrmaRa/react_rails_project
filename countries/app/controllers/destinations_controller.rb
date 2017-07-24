@@ -6,4 +6,9 @@ class DestinationsController < ApplicationController
     render json: destinations.as_json
   end
 
+  def show
+    destination = Destination.find(params[:id])
+    render json: destination
+  end
+
 end

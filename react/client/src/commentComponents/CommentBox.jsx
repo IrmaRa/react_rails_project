@@ -12,43 +12,30 @@ class CommentBox extends React.Component {
     this.handleCommentSave = this.handleCommentSave.bind(this)
 
     this.state = { 
-      data: [],
-      savedComments: []
+      data: []
     }
   }
 
   handleCommentSubmit(comment) {
     comment.id = Date.now();
-    var newComments = this.state.data.concat([comment]);
+    const newComments = this.state.data.concat([comment]);
     this.setState({data: newComments});
   }
 
-  // handleCommentSave(id) {
-  //   var filteredData = this.state.data.filter(function(comment){
-  //     return comment.id == id
-  //   })
-  //   var newSavedComment = this.state.savedComments.concat(filteredData)
-  //   this.setState({savedComments: newSavedComment});
-  //   console.log(newSavedComment)
-  // }
-
   handleCommentSave(id) {
-    var oldSavedComments = JSON.parse(localStorage.getItem('savedCommentsArray')) || [];
-    var filteredData = this.state.data.filter(function(comment){
+    const oldSavedComments = JSON.parse(localStorage.getItem('savedCommentsArray')) || [];
+    const filteredData = this.state.data.filter(function(comment){
       return comment.id == id
     })
-
-    for(var i=0; i < filteredData.length; i++) {
-    oldSavedComments.push(filteredData[i]);
-      
+    for(let i=0; i < filteredData.length; i++) {
+    oldSavedComments.push(filteredData[i]); 
     }
 
     localStorage.setItem('savedCommentsArray', JSON.stringify(oldSavedComments));
-    console.log(oldSavedComments)
   }
 
   handleCommentDelete(id) {
-    var filteredData = this.state.data.filter(function(comment){
+    const filteredData = this.state.data.filter(function(comment){
       return comment.id != id
     })
     this.setState({data: filteredData});
