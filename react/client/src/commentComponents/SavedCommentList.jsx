@@ -9,7 +9,17 @@ class SavedCommentList extends React.Component {
       this.state = {
           comments: comments
       };
+
+    this.handleCommentDelete = this.handleCommentDelete.bind(this)
+
     }
+
+  handleCommentDelete(id) {
+      const filteredData = this.state.comments.filter(function(comment){
+        return comment.id != id
+      })
+      this.setState({comments: filteredData});
+  }
 
   render() {
 
@@ -19,6 +29,7 @@ class SavedCommentList extends React.Component {
        author={savedComment.author} 
        key={savedComment.id} 
        id={savedComment.id} 
+       onCommentDelete={this.handleCommentDelete}
        >
         {savedComment.text}
        </SavedComment>

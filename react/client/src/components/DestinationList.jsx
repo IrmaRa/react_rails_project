@@ -9,7 +9,6 @@ class DestinationList extends React.Component {
     super(props)
 
     this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
-    // this.handleCommentDelete = this.handleCommentDelete.bind(this)
     this.handleCommentSave = this.handleCommentSave.bind(this)
 
     this.state = {
@@ -41,13 +40,6 @@ class DestinationList extends React.Component {
     oldSavedComments.push(comment); 
     localStorage.setItem('savedCommentsArray', JSON.stringify(oldSavedComments));
   }
-
-  // handleCommentDelete(id) {
-  //   const filteredData = this.state.data.filter(function(comment){
-  //     return comment.id != id
-  //   })
-  //   this.setState({data: filteredData});
-  // }
 
   componentDidMount() {
     this.setState({countryId: event.target.value})
@@ -86,8 +78,7 @@ render() {
       />
       <CommentList 
       data={destination.comments}
-      onCommentSave={this.handleCommentSave} 
-      onCommentDelete={this.handleCommentDelete} 
+      onCommentSave={this.handleCommentSave}  
       />
       </div>
       )

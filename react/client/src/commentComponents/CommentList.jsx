@@ -7,7 +7,7 @@ class CommentList extends React.Component {
 
     const commentNodes = this.props.data.map(function(comment) {
       return (
-        <Comment author={comment.author} key={comment.id} onCommentSave={this.props.onCommentSave} onCommentDelete={this.props.onCommentDelete} id={comment.id} >
+        <Comment author={comment.author} key={comment.id} onCommentSave={this.props.onCommentSave} id={comment.id} >
           {comment.text}
         </Comment>
       )
