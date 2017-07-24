@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
 import { HashRouter, Route } from 'react-router-dom';
 
-import Main from './components/Main.jsx';
+import Main from './components/Main';
+import Home from './components/Home';
 import List from './components/List';
 import DestinationList from './components/DestinationList';
 import SavedCommentList from './commentComponents/SavedCommentList';
-
-
 
 
 class App extends React.Component{
@@ -18,7 +17,8 @@ class App extends React.Component{
       <HashRouter>
         <div className='container'>
           <Route path="/" component={Main} /> 
-          <Route exact path="/" component={List} />
+          <Route exact path="/" component={Home} />
+          <Route path="/countries" component={List} />
           <Route path="/destinations" component={DestinationList} />
           <Route path="/recommendations" component={SavedCommentList} />
         </div>

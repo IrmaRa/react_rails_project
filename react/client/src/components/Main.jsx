@@ -8,7 +8,6 @@ class Main extends React.Component {
       <div>
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/recommendations">Saved Recommendations</Link></li>
         </ul>    
       </div>
     )
