@@ -24,12 +24,12 @@ class SignOut extends React.Component{
 
   render() {
     return (
-       <div>
-        <button onClick={this.signOut}>Sign Out</button>
+       <div className='sign-out'>
         <ul>
-        <li><Link className='countries-link' to='/countries'>View Countries</Link></li>
-        <li><Link to="/recommendations">Saved Recommendations</Link></li>
+        <li><Link className='countries-link' to='/countries'>Countries</Link></li>
+        <li><Link to="/recommendations">Recommendations</Link></li>
         </ul>
+        <button onClick={this.signOut}>Sign Out</button>
       </div>
     )
   }

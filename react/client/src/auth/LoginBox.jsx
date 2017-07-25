@@ -47,7 +47,6 @@ class LoginBox extends React.Component {
       </div>
       if(this.state.currentUser){
         mainDiv = <div>
-          <h4> Signed as: {this.state.currentUser.email}</h4>
           <SignOut url={this.props.url + "users/sign_out.json"} onSignOut={this.setUser}></SignOut>
         </div>
       }
