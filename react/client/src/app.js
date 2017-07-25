@@ -15,7 +15,7 @@ class App extends React.Component{
   render(){
     return (
       <HashRouter>
-        <div className='container'>
+        <div>
           <Route exact path="/" component={Home} />
           <Route path="/countries" component={List} />
           <Route path="/destinations" component={DestinationList} />

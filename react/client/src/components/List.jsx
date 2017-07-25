@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Country from './Country'
 
 class List extends React.Component {
@@ -29,17 +28,14 @@ class List extends React.Component {
     const countries = this.state.countries.map((country, index) => {
       return (
         
-        <div>
+        <div className='country'>
         <Country 
         name={country.name}
         image={country.image}
         description={country.description}
+        id={country.id}
         key={index}
-        countries={this.state.countries}
         />
-        <Link to='/destinations'>
-        <button value={country.id}>Explore</button>
-        </Link>
         </div>
    
         )
