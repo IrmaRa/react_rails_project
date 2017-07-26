@@ -20,7 +20,7 @@ class Modal extends React.Component {
           left: '50%',
           transform: 'translate(-50%, -50%)',
           zIndex: '9999',
-          background: 'grey',
+          background: 'lightgrey',
           padding: '25px',
           opacity: '0.8',
           filter: 'alpha(opacity=50)',

@@ -1,8 +1,9 @@
 import React from 'react'
-
 import Destination from './Destination'
 import CommentBox from '../commentComponents/CommentBox'
 import CommentList from '../commentComponents/CommentList'
+import Main from './Main'
+import {HashRouter, Route} from 'react-router-dom'
 
 class DestinationList extends React.Component {
   constructor(props) {
@@ -63,7 +64,7 @@ render() {
 
   const destinations = this.state.destinations.map((destination, index) => {
     return (
-      <div>
+      <div className='destination'>
       <Destination 
       name={destination.name}
       image={destination.image}
@@ -84,7 +85,10 @@ render() {
       )
   })
   return(
-    <div className='destination-list'>
+    <div className='destinations-container'>
+    <HashRouter>
+      <Route path="/" component={Main} />
+    </HashRouter>
     {destinations}
     </div>
     )

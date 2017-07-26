@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+.destinations-container {
+  background-image: url(../images/travel2.jpg);
+  justify-content: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: auto;
+  margin: -3%;
+}
+
+.destination {
+  padding-left: 30px;
+  display: flex;
+  margin: 30px;
+}
+
+.destination-info {
+  width: 40%;
+}
+
+.destination-description {
+  font-size: 20px;
+  width: auto;
+  text-align: left;
+  background-color: #fcf1e9;
+  font-family: 'Josefin Sans';
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px white;
+}
+
+.destination-image {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  padding: 3px;
+  box-shadow: 0 0 20px #fcf1e9;
+}
+
+.destination-name {
+  text-align: center;
+  font-family: 'Limelight';
+  text-transform: uppercase;
+  color: #fcf1e9;
+  text-shadow: 3px 3px black;
+  font-size: 30px;
+}

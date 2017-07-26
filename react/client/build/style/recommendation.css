@@ -1,0 +1,60 @@
+/*/*/*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+.saved-comment-info {
+}
+
+.saved-comment-list {
+  background-image: url(../images/travel3.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 15px;
+  margin: -3%;
+}
+
+.saved-comment-info ul {
+  margin-left: 20px;
+  width: 30%;
+  box-shadow: 0 0 20px black;
+  list-style: none;
+}
+
+.saved-comment-info li {
+  padding: 10px;
+}
+
+.saved-comment-author {
+  width: 90%;
+  font-size: 15px;
+  font-family: 'Limelight';
+  border-bottom: 1px solid black;
+}
+
+.saved-comment-text {
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+}
+
+.saved-comment-info input {
+  padding: 10px;
+  border-radius: 5px;
+  width: 150%;
+}
+
+.saved-comment-info button{
+  padding: 7px;
+  color: white;
+  background-color: black;
+  font-size: 10px;
+  border-radius: 5px;
+  font-family: 'Josefin Sans';
+  text-transform: uppercase;
+}
+
+.saved-comment-info button:hover{
+  background-color: #158479;
+  cursor: pointer;
+}

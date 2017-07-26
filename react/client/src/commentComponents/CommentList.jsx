@@ -14,7 +14,7 @@ class CommentList extends React.Component {
     }.bind(this))
 
     return (
-      <div className="commentList">
+      <div className="comment-list">
         {commentNodes}
       </div>
     )

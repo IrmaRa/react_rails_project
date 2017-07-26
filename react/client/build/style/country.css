@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+
+.countries-container {
+  background-image: url(../images/travel.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  margin: -3%;
+}
+
+.country {
+  display: flex;
+  margin: 20px;
+  text-align: center;
+}
+
+.name-image {
+  float: left;
+  width:50%;
+}
+
+.description-button {
+  float: right;
+  width: 50%;
+  margin-top: 100px;
+}
+
+.country-description {
+  font-size: 20px;
+  width: 80%;
+  text-align: left;
+  background-color: #fcf1e9;
+  font-family: 'Josefin Sans';
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px white;
+}
+
+.country-info button {
+  font-family: 'Limelight';
+  padding: 10px 10px;
+  font-size: 20px;
+  background-color: #f5d4bc;
+  border: 0 none;
+  border-radius: 5px;
+  width: 30%;
+  margin-top: 20px;
+  margin-right: 80px;
+  box-shadow: 6px 6px 10px white;
+}
+
+.country-info button:hover{
+  background-color: #e99b63;
+  cursor: pointer;
+}
+
+.country-image {
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  padding: 3px;
+  box-shadow: 0 0 20px #fcf1e9;
+}
+
+.country-name {
+  font-family: 'Limelight';
+  text-transform: uppercase;
+  color: #fcf1e9;
+  text-shadow: 3px 3px black;
+  font-size: 30px;
+}

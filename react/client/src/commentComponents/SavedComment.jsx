@@ -9,12 +9,18 @@ class SavedComment extends React.Component {
 
   render() {
     return (
-      <div className="savedComment">
-        <h4 className="savedCommentAuthor">
+      <div className="saved-comment-info">
+      <ul>
+        <li className="saved-comment-author">
           { this.props.author }
-        </h4>
+        </li>
+        <li className="saved-comment-text">
         { this.props.children }
-        <button onClick={ this.handleDelete.bind(this) } className="delete">Delete</button>
+        </li>
+        <li>
+        <button onClick={ this.handleDelete.bind(this) } className="delete">delete</button>
+        </li>
+        </ul>
       </div>
     )
   }

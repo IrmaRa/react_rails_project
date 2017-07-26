@@ -1,5 +1,7 @@
 import React from 'react'
 import Country from './Country'
+import Main from './Main'
+import {HashRouter, Route} from 'react-router-dom'
 
 class List extends React.Component {
   constructor() {
@@ -27,7 +29,6 @@ class List extends React.Component {
 
     const countries = this.state.countries.map((country, index) => {
       return (
-        
         <div className='country'>
         <Country 
         name={country.name}
@@ -42,6 +43,9 @@ class List extends React.Component {
     })
     return(
      <div className='countries-container'>
+     <HashRouter>
+        <Route path="/" component={Main} />
+     </HashRouter>
       {countries}
      </div>
       )
