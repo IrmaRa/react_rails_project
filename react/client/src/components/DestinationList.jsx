@@ -66,30 +66,30 @@ render() {
     return (
       <div className='destination'>
       <Destination 
-      name={destination.name}
-      image={destination.image}
-      description={destination.description}
-      comment={destination.comment}
-      key={index}
-      destinations={this.state.destinations}
+        name={destination.name}
+        image={destination.image}
+        description={destination.description}
+        comment={destination.comment}
+        key={index}
+        destinations={this.state.destinations}
       />
       <CommentBox 
-      destinationId={destination.id}
-      onCommentSubmit={this.handleCommentSubmit}
+        destinationId={destination.id}
+        onCommentSubmit={this.handleCommentSubmit}
       />
       <CommentList 
-      data={destination.comments}
-      onCommentSave={this.handleCommentSave}  
+        data={destination.comments}
+        onCommentSave={this.handleCommentSave}  
       />
       </div>
       )
   })
   return(
     <div className='destinations-container'>
-    <HashRouter>
-      <Route path="/" component={Main} />
-    </HashRouter>
-    {destinations}
+      <HashRouter>
+        <Route path="/" component={Main} />
+      </HashRouter>
+      {destinations}
     </div>
     )
   }

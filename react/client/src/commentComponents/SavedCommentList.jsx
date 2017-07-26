@@ -10,7 +10,7 @@ class SavedCommentList extends React.Component {
       let comments = JSON.parse(localStorage.getItem('savedCommentsArray'));
       this.state = {
           comments: comments
-      };
+      }
 
     this.handleCommentDelete = this.handleCommentDelete.bind(this)
 

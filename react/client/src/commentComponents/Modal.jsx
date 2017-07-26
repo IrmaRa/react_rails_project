@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 class Modal extends React.Component {
 
@@ -24,7 +24,6 @@ class Modal extends React.Component {
           padding: '25px',
           opacity: '0.8',
           filter: 'alpha(opacity=50)',
-
         }
 
         let backdropStyle = {

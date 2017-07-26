@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 import Modal from './Modal'
 
 class Comment extends React.Component {
@@ -18,10 +18,9 @@ class Comment extends React.Component {
     });
   }
 
-
-   closeModal() {
-     this.setState({ isModalOpen: false })
-   }
+  closeModal() {
+    this.setState({ isModalOpen: false })
+  }
 
   render() {
     return (
@@ -43,7 +42,6 @@ class Comment extends React.Component {
                   <p><button className='modal-button' onClick={() => this.closeModal()}>close</button></p>
                 </Modal>
                 </div>
-    
       </div>
     )
   }

@@ -31,11 +31,11 @@ class List extends React.Component {
       return (
         <div className='country'>
         <Country 
-        name={country.name}
-        image={country.image}
-        description={country.description}
-        id={country.id}
-        key={index}
+          name={country.name}
+          image={country.image}
+          description={country.description}
+          id={country.id}
+          key={index}
         />
         </div>
    
@@ -43,10 +43,10 @@ class List extends React.Component {
     })
     return(
      <div className='countries-container'>
-     <HashRouter>
-        <Route path="/" component={Main} />
-     </HashRouter>
-      {countries}
+       <HashRouter>
+          <Route path="/" component={Main} />
+       </HashRouter>
+        {countries}
      </div>
       )
 
