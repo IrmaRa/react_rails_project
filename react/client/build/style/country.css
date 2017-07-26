@@ -11,25 +11,26 @@
 }
 
 .country {
-  display: flex;
-  margin: 20px;
   text-align: center;
 }
 
+.country-info {
+  display: flex; 
+}
+
 .name-image {
-  float: left;
-  width:50%;
+  width:60%;
 }
 
 .description-button {
-  float: right;
-  width: 50%;
+  width: 40%;
   margin-top: 100px;
+  margin-right: 50px;
 }
 
 .country-description {
   font-size: 20px;
-  width: 80%;
+  width: 90%;
   text-align: left;
   background-color: #fcf1e9;
   font-family: 'Josefin Sans';
@@ -57,8 +58,8 @@
 }
 
 .country-image {
-  height: 300px;
-  width: 500px;
+  height: 350px;
+  width: 600px;
   border-radius: 5px;
   padding: 3px;
   box-shadow: 0 0 20px #fcf1e9;

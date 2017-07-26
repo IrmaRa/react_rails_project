@@ -105,10 +105,11 @@ a:hover {
 
 .nav-bar {
   width: 10%;
+  margin-left: 40px;
 }
 
 .nav-bar ul {
-  padding-top: 20px;
+  padding-top: 40px;
   list-style: none;
   font-size: 30px;
   font-family: 'Limelight';

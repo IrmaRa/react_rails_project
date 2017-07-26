@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Limelight');
 
 .saved-comment-info {
+  padding-left: 10px;
 }
 
 .saved-comment-list {
@@ -10,14 +11,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   justify-content: center;
-  height: 100vh;
-  padding-top: 15px;
+  height: auto;
   margin: -3%;
 }
 
 .saved-comment-info ul {
-  margin-left: 20px;
-  width: 30%;
+  margin-left: 80px;
+  width: 60%;
   box-shadow: 0 0 20px black;
   list-style: none;
 }
@@ -35,7 +35,7 @@
 
 .saved-comment-text {
   font-family: 'Josefin Sans';
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .saved-comment-info input {
