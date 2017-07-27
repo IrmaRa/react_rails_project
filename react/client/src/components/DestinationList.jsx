@@ -18,6 +18,24 @@ class DestinationList extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.setState({countryId: event.target.value})
+    this.fetchDestinations(event.target.value)
+  }
+
+  fetchDestinations(countryId) {
+      var url = 'http://localhost:5000/api/countries/' + countryId + '/destinations'
+      var request = new XMLHttpRequest()
+      request.open('GET', url)
+      request.onload = () => {
+        if(request.status === 200){
+        var data = JSON.parse(request.responseText)
+        this.setState( { destinations: data} )
+        }
+      }
+    request.send()
+  }
+  
   handleCommentSubmit(comment) {
     const url = 'http://localhost:5000/api/countries/' + this.state.countryId + '/destinations/' + comment.destination_id + '/comments.json'
     const request = new XMLHttpRequest()
@@ -42,23 +60,7 @@ class DestinationList extends React.Component {
     localStorage.setItem('savedCommentsArray', JSON.stringify(oldSavedComments));
   }
 
-  componentDidMount() {
-    this.setState({countryId: event.target.value})
-    this.fetchDestinations(event.target.value)
-  }
 
-  fetchDestinations(countryId) {
-      var url = 'http://localhost:5000/api/countries/' + countryId + '/destinations'
-      var request = new XMLHttpRequest()
-      request.open('GET', url)
-      request.onload = () => {
-       if(request.status === 200){
-        var data = JSON.parse(request.responseText)
-        this.setState( { destinations: data} )
-        }
-      }
-    request.send()
-  }
 
 render() {
 

@@ -1,4 +1,4 @@
-/*/*/*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Limelight');
 
 .saved-comment-info {
@@ -11,12 +11,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   justify-content: center;
+  min-height: 105vh;
   height: auto;
   margin: -3%;
 }
 
 .saved-comment-info ul {
-  margin-left: 80px;
+  margin-left: 75px;
   width: 60%;
   box-shadow: 0 0 20px black;
   list-style: none;

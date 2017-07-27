@@ -27,7 +27,7 @@ class Modal extends React.Component {
         }
 
         let backdropStyle = {
-          position: 'absolute',
+          position: 'abosulte',
           width: '100%',
           height: '100%',
           top: '0px',

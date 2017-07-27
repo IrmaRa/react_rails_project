@@ -25,23 +25,23 @@ class Comment extends React.Component {
   render() {
     return (
       <div className="comment">
-      <ul>
-        <li className="comment-author">
-          { this.props.author }
-        </li>
-        <li className="comment-text">
-        { this.props.children }
-        </li>
+        <ul>
+          <li className="comment-author">
+            { this.props.author }
+          </li>
+          <li className="comment-text">
+          { this.props.children }
+          </li>
         <li>
         <button onClick={this.handleSave.bind(this)}>Save</button>
         </li>
         </ul>
         <div className='modal-container'>
-        <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-                  <p className='modal-text'>It has been successfully saved!</p>
-                  <p><button className='modal-button' onClick={() => this.closeModal()}>close</button></p>
-                </Modal>
-                </div>
+          <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
+            <p className='modal-text'>It has been successfully saved!</p>
+            <p><button className='modal-button' onClick={() => this.closeModal()}>close</button></p>
+          </Modal>
+         </div>
       </div>
     )
   }

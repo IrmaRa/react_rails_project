@@ -36,11 +36,12 @@
 }
 
 .comment {
-  box-shadow: 0 0 20px #fcf1e9;
-  padding: 10px;
+  box-shadow: 0 0 10px #fcf1e9;
+  padding: 5px;
 }
 
 .comment-list {
+  padding: 1px;
   width: 30%;
   margin-top: 95px;
   overflow-x: auto;
